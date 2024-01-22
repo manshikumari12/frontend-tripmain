@@ -1,0 +1,556 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #636161;
+}
+
+nav {
+    width: 100%;
+    height: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 100;
+
+}
+
+.navi {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(211, 208, 208);
+    padding: 5px;
+}
+
+.msgbox {
+    color: #636161;
+}
+ #signupbtn {
+    background-color: #ffffff;
+border: none;
+    color: #636161;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 3px;
+
+ }
+  #loginbtn{
+    background-color: #ffffff;
+    border: none;
+        color: #636161;
+            margin-top: 10px;
+            padding: 5px;
+                border-radius: 3px;
+  }
+.app {
+    color: #636161;
+}
+
+.app:hover {
+    color: rgb(162, 240, 159);
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+}
+
+.logo {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(189, 244, 211);
+}
+
+.logo>img {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.side {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.adjust {
+    display: flex;
+    justify-content: space-around;
+    width: 900px;
+    margin: auto;
+    /* Added margin auto for centering */
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.button {
+    position: relative;
+    padding: 10px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.button::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #61CE70;
+    transition: width 0.3s ease-in-out;
+}
+
+.button:hover::after {
+    width: 100%;
+}
+
+.dropbtn {
+    background-color: #d0f0ff;
+    color: #636161;
+    border: none;
+    cursor: pointer;
+}
+
+.cont {
+    display: none;
+    position: absolute;
+    background-color: #a9e2bf;
+    min-width: 190px;
+    padding-right: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.cont a {
+    color: #636161;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.cont a:hover {
+    background-color: #61CE70;
+}
+
+.dropdown:hover .cont {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #61CE70;
+}
+
+
+.main {
+ 
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 400px;
+    /* position: relative;
+    overflow: hidden; */
+    margin-top: 120px;
+    /* z-index: 100; */
+
+   
+}
+
+
+.mySlides {
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: opacity 1s ease;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+ .holidaybooking {
+     font-family: Arial, sans-serif;
+     background-color: #f4f4f4;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     min-height: 40vh;
+ }
+
+ form {
+     background-color: #fff;
+     padding: 80px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     width: 1300px;
+        display: flex;
+        justify-content: space-around;
+ }
+
+ label {
+     display: block;
+     margin-bottom: 8px;
+     font-weight: bold;
+
+ }
+
+
+#bookNow{
+    border: 1px solid red;
+    width: 70px;
+    background-color: #61CE70;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    
+}
+
+#bookNow:hover{
+        background-color: #61CE70;
+}
+
+
+
+.blockofcont {
+    font-family: Arial, sans-serif;
+    background-color: #d9f6be;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image {
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    animation: image-animation 2s linear infinite alternate;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.visit-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.visit-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.visit-text p {
+    font-size: 18px;
+    color: #636161;
+}
+
+@keyframes image-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(100% - 20px));
+
+    }
+}
+.para{
+  padding: 120px;
+    font-weight: bold;
+}
+
+
+.overflowtex{
+    display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        margin: 0;
+}
+.column-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    text-align: center;
+    margin: 0 20px;
+
+}
+
+.image-container {
+    position: relative;
+}
+
+.column img {
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 3px;
+    
+}
+
+.column p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
+color: #61CE70;
+ font-size: 40px;
+
+    padding: 10px;
+    border-radius: 8px;
+}
+.column p:hover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+
+    color: #585656;
+    font-size: 40px;
+    background-color: #d9f6be;
+
+    padding: 10px;
+    border-radius: 8px;
+}
+.column img:hover {
+    transform: scale(1.1);
+
+}
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+
+    margin: 0;
+}
+
+.promises-container {
+
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    
+    border-radius: 10px;
+  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.vision {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color:#61CE70;
+    padding-top: 20px;
+ 
+
+}
+
+.promises-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+   
+}
+
+.promises-list li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #555;
+   
+    transition: transform 0.3s ease-in-out;
+
+}
+
+
+.promises-list li:hover {
+    color: #94f05e;
+
+    transform: scale(1.1);
+
+}
+
+
+
+/* body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+} */
+
+/* .imageanimationcontainer{
+    display: flex;
+  
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+img:nth-child(1) {
+    transform: translate(0, -100%);
+}
+
+img:nth-child(2) {
+    transform: translate(0, -100%);
+}
+
+img:nth-child(3) {
+    transform: translate(0, -100%);
+}
+
+
+img:hover {
+    transform: translate(0, 0);
+} */
+
+
+
+/* ... Previous CSS styles remain unchanged ... */
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-section,
+.social-section,
+.copyright-section {
+    flex: 1;
+    text-align: center;
+}
+
+h3 {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.about-section,
+.explore-section {
+    flex: 1;
+    text-align: center;
+}
+
+.about-section p {
+    margin: 10px 0;
+}
+
+.explore-section a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.explore-section a:hover {
+    color: #ffd700;
+    /* Change the color on hover */
+}
+
+/* ... Your existing CSS styles ... */
+
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .adjust {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .adjust {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Split Navbar</title>
+</head>
+<style>
+    /* body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.navbar {
+    border: 1px solid red;
+  position: relative;
+  width: 100%; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  overflow: hidden;
+}
+
+.green-side {
+        border: 1px solid red;
+  position: absolute;
+  width: 80%;
+  height: 100%;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 100%);
+}
+
+.white-side {
+        border: 1px solid red;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(165, 13, 13);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+</style>
+
+<body>
+    <div class="navbar">
+        <div class="green-side"> p</div>
+        <div class="white-side">dsvfsd</div>
+    </div>
+</body>
+
+</html>
